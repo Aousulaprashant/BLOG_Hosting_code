@@ -7,7 +7,8 @@
   "scripts": {
     "test": "node server.js",
     "client-install":"cd client && npm install",
-    "client-build":"cd client && npm run build"
+    "client-build":"cd client && npm run build",
+    "build": "node server.js"
   },
   "author": "",
   "license": "ISC",
