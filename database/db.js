@@ -1,10 +1,7 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-dotenv.config();
-const Connection = async () => {
+
+const Connection = async (URI) => {
   try {
-    const password = process.env.PASSWORD;
-    const URI = `mongodb+srv://prashanthchary91595:${password}@blogclustoe.f1qrdrz.mongodb.net/?retryWrites=true&w=majority&appName=Blogclustoe`;
     await mongoose.connect(URI, {
       useNewUrlParser: true,
     });

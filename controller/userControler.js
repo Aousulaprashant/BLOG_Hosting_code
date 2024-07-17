@@ -7,6 +7,11 @@ import Token from "../model/tokenModel.js";
 
 dotenv.config();
 
+const ACCESS_SECRET_KEY =
+  "4af327b35eb52d2cf5da485f833509425d8fdd069217abc20d2d7054eecfbefa8cd7a340a3860cd355449b350c9a3617339c31e219b1be45dc6d539f61666a3e";
+const REFRESH_SECRET_KEY =
+  "8aa0fc22413ad43d33753c46840e8e79bccafac51c69e94e5b0683052e8e3569f9464f1f07ba6599b7e31451111c5a2d75716479bd4bc2687b1952092ba5a23c";
+
 export const signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -54,17 +59,10 @@ export const login = async (req, res) => {
     console.log(match);
 
     if (match) {
-      const accestoken = jwt.sign(
-        User.toJSON(),
-        process.env.ACCESS_SECRET_KEY,
-        {
-          expiresIn: "15m",
-        }
-      );
-      const refreshtoken = jwt.sign(
-        User.toJSON(),
-        process.env.REFRESH_SECRET_KEY
-      );
+      const accestoken = jwt.sign(User.toJSON(), ACCESS_SECRET_KEY, {
+        expiresIn: "15m",
+      });
+      const refreshtoken = jwt.sign(User.toJSON(), REFRESH_SECRET_KEY);
 
       const newtoken = new Token({ token: refreshtoken });
 

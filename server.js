@@ -20,5 +20,9 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log("Server is running on port 5000");
 });
+const password = process.env.PASSWORD;
+const URI =
+  process.env.MONGODB_URL ||
+  `mongodb+srv://prashanthchary91595:${password}@blogclustoe.f1qrdrz.mongodb.net/?retryWrites=true&w=majority&appName=Blogclustoe`;
 
-Connection();
+Connection(URI);

@@ -3,7 +3,8 @@ import multer from "multer";
 import dotenv from "dotenv";
 
 dotenv.config();
-const password = process.env.PASSWORD;
+const password = "Prashanth1234";
+
 const storage = new GridFsStorage({
   url: `mongodb+srv://prashanthchary91595:${password}@blogclustoe.f1qrdrz.mongodb.net/?retryWrites=true&w=majority&appName=Blogclustoe`,
   options: { useNewUrlParser: true },
