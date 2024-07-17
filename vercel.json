@@ -5,11 +5,12 @@
       "use": "@vercel/node" 
     } 
   ], 
-  "routes": [ 
-    { 
-      "src": "/.*", 
-      "dest": "server.js" 
-    } 
-  ], 
+    "routes": [
+      {
+        "src": "/posts/(.*)",
+        "headers": { "Location": "/blog/$1" },
+        "status": 307
+      }
+    ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
 } 
