@@ -1,0 +1,144 @@
+
+.home{
+    margin: 0px;
+}
+.text-blog{
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+.banner{
+    margin: 0px;
+    position: relative;
+    top: -20px;
+    z-index: -1;
+}
+.banner-image {
+    margin: 0px;
+    width: 100%; /* Ensures the image fills the entire width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  max-height: 300px; /* Optional: Limits the maximum height of the image */
+  display: block;/* Adjust the height as per your requirement */
+  object-fit: cover;
+  }
+
+.text-blog h1 {
+    font-size: 50px; /* Adjust the font size as needed */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-blog p{
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.blog-container{
+    display: flex;
+}
+.catagiry{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.catagiry button{
+    padding: 10px;
+    text-align: start;
+}
+.create-blog-link {
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .create-blog-button {
+    margin-left: 5px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .create-blog-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+
+  /* styles.css */
+.button-link {
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .button-link button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .button-link button:hover {
+    background-color: #676666;
+  }
+  
+  @media (max-width: 768px){
+    .blog-container{
+      display: flex;
+      flex-direction: column;
+  } 
+  .catagiry{
+    width: 100%;
+  }
+.catagiry button{
+  padding: 10px;
+  text-align: center;
+}
+.create-blog-link {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.create-blog-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Button border radius */
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin-left: 40%;
+}
+
+.create-blog-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* styles.css */
+.button-link {
+  text-decoration: none;
+  width: 100%;
+  margin: 5px;
+}
+
+.button-link button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button-link button:hover {
+  background-color: #676666;
+}
+  }

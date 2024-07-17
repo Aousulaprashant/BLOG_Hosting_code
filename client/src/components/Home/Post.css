@@ -1,0 +1,427 @@
+  .postslists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .postcard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .postcard:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .postcard .img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .postcard .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .postcard .img p {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .postcard h3 {
+    font-size: 24px;
+    margin: 16px 0 8px;
+    padding: 0 16px;
+  }
+  
+  .postcard p {
+    font-size: 16px;
+    margin: 0 0 8px;
+    padding: 0 16px;
+  }
+  
+  .postcard .des {
+    color: #666;
+  }
+  
+
+/* Post.css */
+.post-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+}
+
+.post-image {
+  width: 100px;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.post-title {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  margin: 16px 0 8px;
+  margin-bottom: 0;
+}
+
+.post-author {
+  font-size: 14px;
+  color: #777;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  font-size: 16px;
+  margin-top: 40px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.post-date,
+.post-category {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.icons {
+  float: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editicon {
+  color: blue;
+  cursor: pointer;
+  
+}
+
+.deleteicon {
+  color: red;
+  cursor: pointer;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 80%;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-header p {
+  margin: 0;
+}
+
+.comment-body h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* Style for write-comment section */
+.write-comment {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.write-comment img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.write-comment textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.write-comment button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  width: 150px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.write-comment button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for read-comments section */
+.read-comments {
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.read-comments .comment {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+
+.comment-header p {
+  margin: 0;
+}
+
+.comment-body h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+  .postslists {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .postcard {
+    margin: 10px;
+  }
+
+  .postcard h3 {
+    font-size: 20px;
+  }
+
+  .postcard p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .postslists {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .postcard {
+    margin: 5px;
+  }
+
+  .postcard h3 {
+    font-size: 18px;
+  }
+
+  .postcard p {
+    font-size: 12px;
+  }
+}
+
+/* Post.css */
+.post-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-title {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  margin: 16px 0 8px;
+}
+
+.post-author {
+  font-size: 14px;
+  color: #777;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  font-size: 16px;
+  margin-top: 40px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.post-date,
+.post-category {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.icons {
+  float: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editicon {
+  color: blue;
+  cursor: pointer;
+}
+
+.deleteicon {
+  color: red;
+  cursor: pointer;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 80%;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-header p {
+  margin: 0;
+}
+
+.comment-body h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style for write-comment section */
+.write-comment {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.write-comment img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.write-comment textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.write-comment button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  width: 150px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.write-comment button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for read-comments section */
+.read-comments {
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.read-comments .comment {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+
+.comment-header p {
+  margin: 0;
+}
+
+.comment-body h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}

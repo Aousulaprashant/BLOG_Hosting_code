@@ -1,0 +1,105 @@
+.aboutbanner{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutbanner img{
+    
+    height: 50vh;
+    margin-top: 58px;
+    width: 60%;
+    background-size: cover;
+}
+
+.aboutwrapper {
+    padding: 20px;
+}
+
+.aboutwrapper h3,
+.aboutwrapper h5 {
+    margin-top: 50px;
+}
+
+
+.icon-link {
+    margin-left: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+/* Contact Section */
+.contactbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contactbanner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .contactwrapper {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .contactwrapper h3 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .contactwrapper p {
+    margin: 20px 0;
+    color: #878787;
+  }
+  
+  .contactwrapper ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contactwrapper li {
+    margin: 10px 0;
+  }
+  
+  .contactwrapper a {
+    text-decoration: none;
+    color: #0073b1;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contactwrapper a:hover {
+    text-decoration: underline;
+  }
+  
+  .contactwrapper a svg {
+    margin-right: 10px;
+  }
+  
+  .contactwrapper h4 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .contactwrapper a {
+    color: #0073b1;
+  }
+  
+  .contactwrapper a:hover {
+    text-decoration: underline;
+  }
+  

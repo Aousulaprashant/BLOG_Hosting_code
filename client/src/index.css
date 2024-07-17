@@ -1,0 +1,13 @@
+
+@import url('./components/Header/Header.css');
+
+@import url("./pages/Signin.css");
+
+@import url("./components/createPost/CreatePost.css");
+@import url("./components/Home.css");
+
+@import url("./components/Home/Post.css");
+
+@import url("./components/about/about.css");
+
+@import url("./components/contactus/contactus.css");
